@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="principal">
+        <section>
+            <img src="images/logo.svg" id="logo-alura"  alt="Logo de Alura">
+            <textarea id="texto-a-procesar" class="campo-input" placeholder="Ingrese el texto a encriptar"></textarea>
+
+            <div id="frameSoloMin">
+                <img src="images/exclamacion.svg" alt="Símbolo de exclamación" id="exclamacion">
+                <p class="soloMinText">Sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">
+                    <div class="btnEncriptarText">
+                        Encriptar
+                    </div>
+                </button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">
+                    <div class="btnDesencriptarText">
+                        Desencriptar
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section id="seccion-rectangulo-der">
+            <textarea id="texto-procesado" class="campo-output"></textarea> 
+        </section>
+        <section id="seccion-munieco">
+            <img src="images/munieco.svg" id="munieco" alt="Muñeco investigador">
+            <p id="msg-ingrese-texto">Ningún mensaje fue encontrado. Ingrese el texto a encriptar o desencriptar</p>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright">Copyright Leandro Gil. 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
